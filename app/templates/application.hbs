@@ -1,28 +1,52 @@
-<h2 id="title">WAG - We Adopt Greyhounds, Inc.</h2>
-<ul>
-  <li>
-    {{#link-to 'availablehounds'}}Available Hounds{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'prisonhounds'}}CT. Prison Hounds{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'donate'}}Donate{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'adoption'}}Adoption{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'about'}}About{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'adopted'}}Adopted{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'events'}}Events{{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'shop'}}Shop{{/link-to}}
-  </li>
-</ul>
-{{outlet}}
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--<a class="navbar-brand" href="#">We Adopt Greyhounds, Inc.</a>-->
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            {{#link-to 'index'}}Home{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'about'}}About{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'availablehounds'}}Available Hounds{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'prisonhounds'}}CT. Prison Hounds{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'donate'}}Donate{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'adoption'}}Adoption{{/link-to}}
+          </li>
+          
+          <li>
+            {{#link-to 'adopted'}}Adopted{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'events'}}Events{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'shop'}}Shop{{/link-to}}
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav> 
+    <div class="container">
+
+     {{outlet}}
+
+    </div><!-- /.container -->
+
+
